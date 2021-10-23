@@ -1,25 +1,29 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculadora", "calculadora\calculadora.csproj", "{15DA78B1-ABC4-43E4-A55D-9809F233196E}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{15DA78B1-ABC4-43E4-A55D-9809F233196E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15DA78B1-ABC4-43E4-A55D-9809F233196E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15DA78B1-ABC4-43E4-A55D-9809F233196E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15DA78B1-ABC4-43E4-A55D-9809F233196E}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {0A3E99C3-7F61-45C8-976E-FAEDA9F25E93}
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace calculadora
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double producto1;
+            double producto2;
+            double producto3;
+            double producto4;
+            double resultado;
+            float leche = 3000;
+            float huevos = 23000;
+            float galletas = 20000;
+            float arepas = 12000;
+
+            Console.WriteLine("ingrese el nombre del producto");
+
+        }
+    }
+}
+
