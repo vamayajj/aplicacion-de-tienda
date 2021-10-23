@@ -13,6 +13,10 @@ namespace Buscador
             //Inicialización de las variables
 
             string producto;
+            float leche = 3000;
+            float huevos = 23000;
+            float galletas = 20000;
+            float arepas = 12000;
 
             Console.WriteLine("Los productos disponibles son");
             Console.WriteLine("Paquete de galletas");
@@ -27,25 +31,25 @@ namespace Buscador
 
             if (producto == "Paquete de galletas")
             {
-                Console.WriteLine("El precio del producto es" + 20000);
+                Console.WriteLine("El precio del producto es" + galletas);
                 Console.ReadLine();
             }
 
             if (producto == "Huevos")
             {
-                Console.WriteLine("El precio del producto es" + 23000);
+                Console.WriteLine("El precio del producto es" + huevos);
                 Console.ReadLine();
             }
 
             if (producto == "Arepas")
             {
-                Console.WriteLine("El precio del producto es" + 12000);
+                Console.WriteLine("El precio del producto es" + arepas);
                 Console.ReadLine();
             }
 
             if (producto == "Leche")
             {
-                Console.WriteLine("El precio del producto es" + 3000);
+                Console.WriteLine("El precio del producto es" + leche);
                 Console.ReadLine();
             }
 
