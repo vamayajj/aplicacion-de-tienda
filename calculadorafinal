@@ -11,7 +11,7 @@ namespace calculadora
     {
         static void Main(string[] args)
         {
-            /* int art1 = 0; int art2 = 0; int art3 = 0; int art4 = 0; int art5 = 0;*/
+         
             int Preciol = 3000; int Precioh = 23000; int Preciog = 20000;  int Precioa = 12000; int sum = 0; int cant = 0; int importe = 0; int importe1 = 0; int importe2 = 0; int importe3 = 0; 
 
 
