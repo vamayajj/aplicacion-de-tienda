@@ -21,7 +21,7 @@ namespace calculadora
 
             Console.WriteLine("\n\nArticulo1");
             Console.WriteLine("\nleche   ");
-            //art1 = Int32.Parse(Console.ReadLine());
+           
 
 
             Console.WriteLine("Precio de la leche : 3000 ");
