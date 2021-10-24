@@ -1,0 +1,99 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace calculadora
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /* int art1 = 0; int art2 = 0; int art3 = 0; int art4 = 0; int art5 = 0;*/
+            int Preciol = 3000; int Precioh = 23000; int Preciog = 20000;  int Precioa = 12000; int sum = 0; int cant = 0; int importe = 0; int importe1 = 0; int importe2 = 0; int importe3 = 0; 
+
+
+            Console.WriteLine("\tiendita ");
+            Console.WriteLine("\tVentas");
+
+
+            Console.WriteLine("\n\nArticulo1");
+            Console.WriteLine("\nleche   ");
+            //art1 = Int32.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Precio de la leche : 3000 ");
+
+
+
+            Console.WriteLine("Cantidad :  ");
+            cant = Int32.Parse(Console.ReadLine());
+
+
+            importe = cant * Preciol;
+            Console.WriteLine("Importe : {0}", importe);
+
+
+            Console.WriteLine("\n\nArticulo2");
+            Console.WriteLine("\nhuevos   ");
+            //  art2 = Int32.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Precio huevos :23000 ");
+
+
+
+            Console.WriteLine("Cantidad :  ");
+            cant = Int32.Parse(Console.ReadLine());
+
+
+            importe1 = cant * Precioh;
+            Console.WriteLine("Importe : {0}", importe1);
+
+
+            Console.WriteLine("\n\nArticulo3");
+            Console.WriteLine("\ngalletas   ");
+            // art3 = Int32.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Precio galletas : 20000 ");
+
+
+
+            Console.WriteLine("Cantidad :  ");
+            cant = Int32.Parse(Console.ReadLine());
+
+
+            importe2 = cant * Preciog;
+            Console.WriteLine("Importe : {0}", importe2);
+
+            Console.WriteLine("\n\nArticulo4");
+            Console.WriteLine("\narepas   ");
+            //  art4 = Int32.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Precio arepas : 12000 ");
+
+
+
+            Console.WriteLine("Cantidad :  ");
+            cant = Int32.Parse(Console.ReadLine());
+
+            importe3 = cant * Precioa;
+            Console.WriteLine("Importe : {0}", importe3);
+
+
+
+           
+
+
+            sum = importe + importe1 + importe2 + importe3;
+
+            Console.WriteLine("\n\n\tEl Total a Pagar es de : {0}", sum);
+
+            Console.ReadKey();
+        }
+    }
+}
