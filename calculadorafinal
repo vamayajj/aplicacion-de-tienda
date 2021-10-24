@@ -55,7 +55,7 @@ namespace calculadora
 
             Console.WriteLine("\n\nArticulo3");
             Console.WriteLine("\ngalletas   ");
-            // art3 = Int32.Parse(Console.ReadLine());
+            
 
 
             Console.WriteLine("Precio galletas : 20000 ");
