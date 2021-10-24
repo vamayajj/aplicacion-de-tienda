@@ -71,7 +71,7 @@ namespace calculadora
 
             Console.WriteLine("\n\nArticulo4");
             Console.WriteLine("\narepas   ");
-            //  art4 = Int32.Parse(Console.ReadLine());
+          
 
 
             Console.WriteLine("Precio arepas : 12000 ");
