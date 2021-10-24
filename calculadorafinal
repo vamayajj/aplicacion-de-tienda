@@ -38,7 +38,7 @@ namespace calculadora
 
             Console.WriteLine("\n\nArticulo2");
             Console.WriteLine("\nhuevos   ");
-            //  art2 = Int32.Parse(Console.ReadLine());
+           
 
 
             Console.WriteLine("Precio huevos :23000 ");
