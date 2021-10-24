@@ -15,7 +15,7 @@ namespace calculadora
             int Preciol = 3000; int Precioh = 23000; int Preciog = 20000;  int Precioa = 12000; int sum = 0; int cant = 0; int importe = 0; int importe1 = 0; int importe2 = 0; int importe3 = 0; 
 
 
-            Console.WriteLine("\tiendita ");
+            Console.WriteLine("\tienda de don chucho");
             Console.WriteLine("\tVentas");
 
 
