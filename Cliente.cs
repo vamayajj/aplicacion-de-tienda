@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
 
 namespace ClientesGeneral
 {
@@ -6,6 +11,17 @@ namespace ClientesGeneral
     {
         static void Main(string[] args)
         {
+
+            string filePath = @"C:\Users\untac\source\repos\vamayajj\aplicacion-de-tienda\data.txt";
+
+            List<string> lines = File.ReadAllLines(filePath).ToList();
+
+            lines.Add("Melo")
+
+            File.WriteAllLines(filePath, lines);
+
+
+
 
             ClassClienteVentas Cliente;
 
