@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Linq;
+using System.IO;
 using static System.Console;
 
 namespace AppTienda
@@ -34,7 +35,7 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
                                                                                                                                                                                           
                                                                                                                                                                                           
          Elija una de las opciones";
-            string[] options = {  "Consultar precios" , "Calculadora de ventas" , "Acerca de" , "Salir" };
+            string[] options = { "Consultar precios", "Calculadora de ventas","Registro", "Acerca de", "Salir" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
@@ -47,9 +48,12 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
                     RunCalculadora();
                     break;
                 case 2:
-                    AcercaDe();
+                    RunRegistro();
                     break;
                 case 3:
+                    AcercaDe();
+                    break;
+                case 4:
                     ExitShop();
                     break;
                 default:
@@ -135,7 +139,7 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
                 Console.WriteLine("Producto no encontrado, por favor presione cualquier tecla para intentar denuevo");
                 ReadKey(true);
                 RunBuscador();
-               
+
             }
 
         }
@@ -148,7 +152,7 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
             Console.WriteLine("\tVentas");
             Console.WriteLine("\n\nArticulo1");
             Console.WriteLine("\nleche   ");
-            
+
             Console.WriteLine("Precio de la leche : 3000 ");
             Console.WriteLine("Cantidad :  ");
             cant = Int32.Parse(Console.ReadLine());
@@ -156,7 +160,7 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
             Console.WriteLine("Importe : {0}", importe);
             Console.WriteLine("\n\nArticulo2");
             Console.WriteLine("\nhuevos   ");
-       
+
             Console.WriteLine("Precio huevos :23000 ");
             Console.WriteLine("Cantidad :  ");
             cant = Int32.Parse(Console.ReadLine());
@@ -164,7 +168,7 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
             Console.WriteLine("Importe : {0}", importe1);
             Console.WriteLine("\n\nArticulo3");
             Console.WriteLine("\ngalletas   ");
-       
+
             Console.WriteLine("Precio galletas : 20000 ");
             Console.WriteLine("Cantidad :  ");
             cant = Int32.Parse(Console.ReadLine());
@@ -172,7 +176,7 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
             Console.WriteLine("Importe : {0}", importe2);
             Console.WriteLine("\n\nArticulo4");
             Console.WriteLine("\narepas   ");
-          
+
             Console.WriteLine("Precio arepas : 12000 ");
             Console.WriteLine("Cantidad :  ");
             cant = Int32.Parse(Console.ReadLine());
@@ -186,6 +190,71 @@ $$$$$$$$/ $$$$$$/ $$$$$$$$/ $$  \ $$ |$$$$$$$  |/$$$$$$  |      $$$$$$$  |$$$$$$
             ReadKey(true);
             RunMainMenu();
         }
+        public void RunRegistro()
+        {
+            Clear();
+
+            ClassCliente Cliente;
+
+            Cliente = new ClassCliente();
+
+            string filePath = @"C:\Users\juanj\source\repos\AppTienda\AppTienda\data.txt";
+
+            List<string> lines = File.ReadAllLines(filePath).ToList();
+
+            foreach (string line in lines)
+            {
+                Console.WriteLine(line);
+            }
+
+            Console.WriteLine("Ingrese el id del cliente");
+            Cliente.IdCliente = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese los apellidos del cliente");
+            Cliente.Apellidos = Console.ReadLine();
+            Console.WriteLine("Ingrese los nombres del cliente");
+            Cliente.Nombres = Console.ReadLine();
+            Console.WriteLine("Ingrese la CC del cliente");
+            Cliente.CC = Console.ReadLine();
+            Console.WriteLine("Ingrese la dirección del cliente");
+            Cliente.Direccion = Console.ReadLine();
+            Console.WriteLine("Ingrese el municipio del cliente");
+            Cliente.Municipio = Console.ReadLine();
+            Console.WriteLine("El cliente tiene crédito? responda con true or false");
+            Cliente.EsCredito = bool.Parse(Console.ReadLine());
+
+            lines.Add(Cliente.Apellidos);
+            lines.Add(Cliente.Nombres);
+            lines.Add(Cliente.CC);
+            lines.Add(Cliente.Direccion);
+            lines.Add(Cliente.Municipio);
+            lines.Add("----------------");
+
+            File.WriteAllLines(filePath, lines);
+
+
+
+
+
+
+
+
+            Console.WriteLine(Cliente.Apellidos + " " + Cliente.Nombres);
+            Console.WriteLine(Cliente.Direccion + ", " + Cliente.Municipio);
+            Console.WriteLine(Cliente.CC);
+            if (Cliente.EsCredito)
+            {
+                Console.WriteLine("El cliente tiene credito");
+                Cliente.EsCredito = true;
+            }
+            else
+            {
+                Console.WriteLine("El cliente no tiene credito");
+                Cliente.EsCredito = false;
+            }
+            
+            Console.WriteLine("Se ha guardado los datos del cliente en el archivo TXT.  Presione cualquier telca para volver");
+            ReadKey(true);
+            RunMainMenu();
+        }
     }
-    
 }
