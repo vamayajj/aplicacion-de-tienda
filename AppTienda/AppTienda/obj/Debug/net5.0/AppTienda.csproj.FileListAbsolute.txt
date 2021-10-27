@@ -1,0 +1,16 @@
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.csproj.AssemblyReference.cache
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.AssemblyInfoInputs.cache
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.AssemblyInfo.cs
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.csproj.CoreCompileInputs.cache
+C:\Users\juanj\source\repos\AppTienda\AppTienda\bin\Debug\net5.0\AppTienda.exe
+C:\Users\juanj\source\repos\AppTienda\AppTienda\bin\Debug\net5.0\AppTienda.deps.json
+C:\Users\juanj\source\repos\AppTienda\AppTienda\bin\Debug\net5.0\AppTienda.runtimeconfig.json
+C:\Users\juanj\source\repos\AppTienda\AppTienda\bin\Debug\net5.0\AppTienda.runtimeconfig.dev.json
+C:\Users\juanj\source\repos\AppTienda\AppTienda\bin\Debug\net5.0\AppTienda.dll
+C:\Users\juanj\source\repos\AppTienda\AppTienda\bin\Debug\net5.0\ref\AppTienda.dll
+C:\Users\juanj\source\repos\AppTienda\AppTienda\bin\Debug\net5.0\AppTienda.pdb
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.dll
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\ref\AppTienda.dll
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.pdb
+C:\Users\juanj\source\repos\AppTienda\AppTienda\obj\Debug\net5.0\AppTienda.genruntimeconfig.cache

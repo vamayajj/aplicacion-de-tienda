@@ -1,0 +1,13 @@
+
+a
+b
+1400000
+cll 123 a #54-30
+Medellin
+----------------
+Zapata Ochoa
+Pablo 
+100077531
+Cll 112 A #54-10
+Medellin
+----------------
